@@ -1,5 +1,116 @@
 * {
-  border: 1px solid red;
+  font-family: serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding-inline-start: 0px;
+}
+
+.hdr-cnt {
+  display: flex;
+  flex-direction: row;
+  width: 768px;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.hdr-cnt a {
+  color: white;
+  text-decoration: none;
+}
+.hdr-cnt a:hover {
+  text-decoration: underline;
+}
+
+.background-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/notes.jpg");
+  background-size: 100% 100%;
+  height: 700px;
+}
+
+.title-cnt {
+  display: flex;
+  flex-direction: column;
+  width: 768px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+.title-cnt h2 {
+  padding-bottom: 10px;
+  border-bottom: white 3px solid;
+}
+.title-cnt a {
+  border: white 1px solid;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.ftr-cnt-top {
+  display: flex;
+  flex-direction: row;
+  width: 768px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+.ftr-cnt-top a {
+  color: white;
+}
+
+.ftr-cnt-btm {
+  display: flex;
+  flex-direction: row;
+  width: 768px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+.ftr-cnt-btm a {
+  color: white;
+  text-decoration: none;
+}
+.ftr-cnt-btm a:hover {
+  text-decoration: underline;
+}
+
+header {
+  height: 75px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+  opacity: 0.85;
+}
+
+footer {
+  height: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+  opacity: 0.85;
+}
+
+@media screen and (min-width: 768px) {
+  .media {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .media {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .media {
+    width: 1200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

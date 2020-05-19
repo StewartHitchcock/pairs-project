@@ -1,0 +1,94 @@
+// Header Container
+
+.hdr-cnt {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+//  Banner
+
+.background-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/notes.jpg");
+    background-size: 100% 100%;
+    height: 700px;
+    }
+
+.title-cnt {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+
+    h2 {
+        padding-bottom: 10px;
+        border-bottom: white 3px solid;
+    }
+
+    a {
+        border: white 1px solid;
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+    }
+}
+// Top section of the footer containing the social media and copyright info
+.ftr-cnt-top {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+
+    a {
+        color: white;
+    }
+}
+
+// Bottom section of the footer containing more navigation links 
+
+.ftr-cnt-btm {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
