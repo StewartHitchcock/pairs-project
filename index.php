@@ -10,6 +10,7 @@
 <body>
     <?php include "all-pages/header.php"; ?>
     <?php include "landing-page/showcase.php"; ?>
+    <?php include "all-pages/content.php"; ?>
     <?php include "all-pages/footer.php"; ?>
 </body>
 </html>

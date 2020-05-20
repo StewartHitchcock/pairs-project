@@ -3,18 +3,33 @@
 .hdr-cnt {
     display: flex;
     flex-direction: row;
-    width: 768px;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     color: white;
     text-transform: uppercase;
-    font-size: 14px;
-    
+    height: 150px;
 
+    .layout {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 200px;
+    }
+
+    h1{
+        font-size: 30px;
+        margin-left: 20px;
+        width: 200px;
+    }
+    
     a {
         color: white;
         text-decoration: none;
+        font-size: 15px; 
+        margin-right: 18px;
+        margin-bottom: 10px;
+        margin-left: 5px;
     }
 
     a:hover {
@@ -33,7 +48,6 @@
 .title-cnt {
     display: flex;
     flex-direction: column;
-    width: 768px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -43,6 +57,7 @@
     h2 {
         padding-bottom: 10px;
         border-bottom: white 3px solid;
+        width: 200px;
     }
 
     a {
@@ -90,5 +105,153 @@
         text-decoration: underline;
     }
 }
+
+// Philosophy container 
+
+.ctn-main {
+    display: flex;
+    flex-direction: row;
+
+    .philo-div {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+}
+
+// Experience container
+
+.ctn-sec-bckgrnd {
+    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../imgs/Exp-background.jpg");
+    margin-bottom: 20px;
+}
+
+.ctn-sec {
+    display: flex;
+    align-items: center;
+    color: white;
+
+    h3 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .span-exp {
+        width: 150px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .exp-div{
+        width: 800px;
+    }
+}
+
+// Contact primary
+
+.cntct-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px black;
+        width: 350px;
+        height: 300px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+        background-image: url("../imgs/srvc-background.jpg");
+
+        h4 {
+            font-size: 40px;
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+
+        .span-cntct {
+            width: 30px;
+            height: 3px;
+            background-color: black;
+        }
+
+        p{
+            width: 200px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .offices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px black;
+        width: 350px;
+        height: 300px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+        background-image: url("../imgs/offices-background.jpg");
+
+        h4 {
+            font-size: 40px;
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+
+        .span-cntct {
+            width: 50px;
+            height: 3px;
+            background-color: black;
+        }
+
+        p{
+            width: 200px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// Contact secondary
+
+.cntct-sec-bckgrnd {
+    width: 100%;
+    background-color: black;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+.cntct-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    p {
+        color: white;
+        width: 600px;
+    }
+
+    a {
+        border: white solid 1px; 
+        color: white;
+        margin-left: 10px;
+        padding: 10px;
+        
+    }
+}
+
+//testimonial section
+
+.testimonial {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 

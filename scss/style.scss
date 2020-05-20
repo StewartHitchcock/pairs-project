@@ -1,9 +1,12 @@
-@import "partials/base/reset",
+@import "partials/utilities/variables",
+        "partials/base/reset",
         "partials/base/base-styles",
-        "partials/utilities/variables",
-        "partials/utilities/media-queries",
-        "partials/components/buttons",
-        "partials/components/icons",
         "partials/layout/containers",
         "partials/layout/header",
-        "partials/layout/footer";
+        "partials/layout/footer",
+        "partials/components/buttons",
+        "partials/components/icons",
+        "partials/components/images",
+        "partials/utilities/media-queries";
+       
+        

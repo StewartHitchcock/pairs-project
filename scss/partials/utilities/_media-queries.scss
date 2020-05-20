@@ -1,21 +1,48 @@
+@media screen and (min-width: 730px) {
+
+.layout {
+    flex-wrap: nowrap;
+    margin-left: -100px;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
 
 .media {
     width: 750px;
+    margin: auto auto;
     }
+
+
 }
 
-
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
 .media {
     width: 970px;
     }
+
+.offices {
+    width: 450px;
+    }
+
+.services {
+    width: 450px;
+    }
 }
 
-@media (min-width: 1260px) {
+@media screen and (min-width: 1260px) {
 
 .media {
     width: 1200px;
+    }
+
+    .offices {
+        width: 550px;
+    }
+
+    .services {
+        width: 550px;
     }
 }
