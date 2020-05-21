@@ -1,0 +1,34 @@
+.burger-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 3px;
+    height: 63px;
+  }
+  
+  .burger-container p {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0px auto;
+  }
+
+  .burger-bot,
+  .burger-mid,
+  .burger-top {
+    width: 35px;
+    height: 5px;
+    margin: 0px auto 5px;
+    background-color: black;
+  }
+
+  .burger-bot {
+      margin-bottom: 8px;
+  }
+  
+
+
+  

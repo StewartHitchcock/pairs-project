@@ -9,5 +9,13 @@
             <a href=""><i class="fas fa-phone-alt"></i></a>
             <a href=""><i class="far fa-envelope"></i></a>
         </div>
+        <div class="burger-container">
+            <div>
+                <div class="burger-top"></div>
+                <div class="burger-mid"></div>
+                <div class="burger-bot"></div>
+            </div>
+            <p>Menu</p>
+        </div>  
     </div>
 </header>

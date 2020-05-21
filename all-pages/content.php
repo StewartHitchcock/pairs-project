@@ -18,7 +18,7 @@
 </div>
 
 <div class = "cntct-main media">
-    <div class ="services">
+    <div class ="card services">
         <h4>My Services</h4>
         <div class = "span-cntct"></div>
         <p>Lorem ipsum dolor sit amet 
@@ -29,7 +29,7 @@
         </p>
         <a href="">Find Out More</a>
     </div>
-    <div class ="offices">
+    <div class =" card offices">
         <h4>My Offices</h4>
         <div class = "span-cntct"></div>
         <p>Lorem ipsum dolor sit amet 

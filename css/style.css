@@ -479,7 +479,6 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 200px;
 }
 .hdr-cnt h1 {
   font-size: 30px;
@@ -513,10 +512,14 @@ a {
   color: white;
   text-transform: uppercase;
 }
+.title-cnt h1 {
+  border-bottom: white 3px solid;
+  font-size: 80px;
+  padding-bottom: 20px;
+}
 .title-cnt h2 {
   padding-bottom: 10px;
-  border-bottom: white 3px solid;
-  width: 200px;
+  font-size: 55px;
 }
 .title-cnt a {
   border: white 1px solid;
@@ -597,7 +600,7 @@ a {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.cntct-main .services {
+.cntct-main .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -605,8 +608,19 @@ a {
   border: solid 1px black;
   width: 350px;
   height: 300px;
-  margin-right: 10px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 992px) {
+  .cntct-main .card {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .cntct-main .card {
+    width: 550px;
+  }
+}
+.cntct-main .services {
   background-image: url("../imgs/srvc-background.jpg");
 }
 .cntct-main .services h4 {
@@ -624,15 +638,6 @@ a {
   margin-bottom: 20px;
 }
 .cntct-main .offices {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px black;
-  width: 350px;
-  height: 300px;
-  margin-right: 10px;
-  margin-bottom: 40px;
   background-image: url("../imgs/offices-background.jpg");
 }
 .cntct-main .offices h4 {
@@ -664,7 +669,6 @@ a {
 }
 .cntct-sec p {
   color: white;
-  width: 600px;
 }
 .cntct-sec a {
   border: white solid 1px;
@@ -690,6 +694,37 @@ footer {
   opacity: 0.85;
 }
 
+.burger-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 3px;
+  height: 63px;
+}
+
+.burger-container p {
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0px auto;
+}
+
+.burger-bot,
+.burger-mid,
+.burger-top {
+  width: 35px;
+  height: 5px;
+  margin: 0px auto 5px;
+  background-color: black;
+}
+
+.burger-bot {
+  margin-bottom: 8px;
+}
+
 .fa-envelope {
   font-size: 18px;
 }
@@ -705,12 +740,6 @@ footer {
   height: 500px;
 }
 
-@media screen and (min-width: 730px) {
-  .layout {
-    flex-wrap: nowrap;
-    margin-left: -100px;
-  }
-}
 @media screen and (min-width: 768px) {
   .media {
     width: 750px;
@@ -721,26 +750,10 @@ footer {
   .media {
     width: 970px;
   }
-
-  .offices {
-    width: 450px;
-  }
-
-  .services {
-    width: 450px;
-  }
 }
 @media screen and (min-width: 1260px) {
   .media {
     width: 1200px;
-  }
-
-  .offices {
-    width: 550px;
-  }
-
-  .services {
-    width: 550px;
   }
 }
 
