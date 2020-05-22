@@ -11,39 +11,54 @@
         width: 10%;
         margin-top: -10px;
     }
-    .services{
+    .services-1{
         width: calc(100% - 2rem);
-        margin: 1rem auto;
+        margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 1rem;
+    }
+    .services-2{
+        width: calc(100% - 2rem);
+        margin: 0 auto 2rem auto;
         .service{
-            padding: 0 1rem;
-            margin: 1rem 0;
-            width: 100%;
-            border: 1px solid black;
-            text-align: center;
-            font-size: 1.2rem;
-            hr.styled{
-                width: 150px;
-            }
-            p:last-child{
+            padding: 0 1rem 2rem 1rem;
+        }
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 1.2rem;
+        hr.styled{
+            width: 150px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+        .price{
+            p{
                 font-weight: bold;
                 font-size: 1.5rem;
             }
-            /*
-            @media screen and (min-width: 900px) {
-                width: 49%;
-                display: inline-block;
-                margin: 0;
-                height: 100%;
-            }
-            */
         }
-        @media screen and (min-width: 1200px) {
+    }
+    @media screen and (min-width: 1200px) {
+        .services-1,
+        .services-2{
             width: 80%;
         }
-        @media screen and (min-width: 1400px) {
+    }
+    @media screen and (min-width: 1400px) {
+        .services-1,
+        .services-2{
             width: 60%;
         }
     }
