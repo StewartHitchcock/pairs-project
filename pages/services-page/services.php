@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr Gilbert Andrews | Consultant Psychiatrist</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script src="https://kit.fontawesome.com/ec34e9393d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <?php include "pages/header.php"; ?>
-    <?php include "pages/landing-page/showcase.php"; ?>
-    <?php include "pages/footer.php"; ?>
+    <?php $root = $_SERVER['DOCUMENT_ROOT']; ?>
+    <?php include "$root/pages/header.php"; ?>
+    <?php include "$root/pages/services-page/main-content.php"; ?>
+    <?php include "$root/pages/footer.php"; ?>
 </body>
 </html>
