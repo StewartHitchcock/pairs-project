@@ -71,44 +71,6 @@
         text-decoration: none;
     }
 }
-// Top section of the footer containing the social media and copyright info
-.ftr-cnt-top {
-    display: flex;
-    flex-direction: row;
-    width: 768px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-size: 12px;
-
-    a {
-        color: white;
-    }
-}
-
-// Bottom section of the footer containing more navigation links 
-
-.ftr-cnt-btm {
-    display: flex;
-    flex-direction: row;
-    width: 768px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    text-transform: uppercase;
-    
-
-    a {
-        color: white;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-}
 
 // Philosophy container 
 
@@ -126,7 +88,7 @@
 // Experience container
 
 .ctn-sec-bckgrnd {
-    height: 450px;
+    height: 775px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../imgs/Exp-background.jpg");
     margin-bottom: 20px;
 }
@@ -135,6 +97,7 @@
     display: flex;
     align-items: center;
     color: white;
+    margin: auto auto;
 
     h3 {
         font-size: 40px;
@@ -142,14 +105,19 @@
     }
 
     .span-exp {
-        width: 150px;
+        width: 200px;
         height: 3px;
         background-color: white;
+        margin: auto;
     }
 
     .exp-div{
-        width: 800px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
     }
+
+  
 }
 
 // Contact primary
@@ -159,6 +127,12 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
+
+    @media screen and (max-width: $sml) {     
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .card{
         display: flex;
@@ -170,17 +144,13 @@
         height: 300px;
         margin-bottom: 40px;
 
-        @media screen and (min-width: 992px) {     
+        @media screen and (min-width: $sml) {     
             width: 450px;
         }
 
-        @media screen and (min-width: 1260px) {
+        @media screen and (min-width: $scrn) {
             width: 550px;
         }
-    }
-
-    .services {
-        background-image: url("../imgs/srvc-background.jpg");
 
         h4 {
             font-size: 40px;
@@ -200,25 +170,19 @@
         }
     }
 
+    .services {
+        background-image: url("../imgs/srvc-background.jpg");
+        
+        @media screen and (min-width: $sml) {     
+            margin-right: 10px;
+        }
+    }
 
     .offices {
         background-image: url("../imgs/offices-background.jpg");
 
-        h4 {
-            font-size: 40px;
-            margin-top: 0px;
-            margin-bottom: 3px;
-        }
-
-        .span-cntct {
-            width: 50px;
-            height: 3px;
-            background-color: black;
-        }
-
-        p{
-            width: 200px;
-            margin-bottom: 20px;
+        @media screen and (min-width: $sml) {     
+            margin-left: 10px;
         }
     }
 }
@@ -228,15 +192,26 @@
 .cntct-sec-bckgrnd {
     width: 100%;
     background-color: black;
-    height: 75px;
-    margin-bottom: 10px;
+    height: 175px;
+    margin-bottom: 10px; 
+
+    @media screen and (min-width: $sml) {     
+        height: 90px;
+    }
+    
 }
 
 .cntct-sec {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    
+    width: 350px;
+    margin: auto;
+
+    @media screen and (min-width: $sml) {     
+        flex-direction: row;
+    }
+   
     p {
         color: white;
     }
@@ -245,18 +220,108 @@
         border: white solid 1px; 
         color: white;
         margin-left: 10px;
-        padding: 10px;
+        padding: 10px 30px;
+        font-size: 30px;
+        white-space: nowrap;
         
+    
+        @media screen and (min-width: $sml) {     
+            padding: 10px 40px;
+            font-size: 20px;
+            margin-left: 50px;
+        }
     }
 }
 
 //testimonial section
 
+
+.testimonial-bckgrnd {
+    width: 100%;
+    background-color: $white;
+    height: 350px;
+
+    @media screen and (min-width: $scrn) {     
+        height: 250px;
+    }
+}
+
 .testimonial {
     display: flex;
     flex-direction: row;
+    width: 350px;
+    margin: auto;
+
+    @media screen and (min-width: $sml) {     
+        font-size: 25px;
+    }
 }
 
+// Top section of the footer containing the social media and copyright info
+.ftr-cnt-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 12px;
 
+    @media screen and (min-width: $sml) {     
+        flex-wrap: nowrap;
+    }
 
+    a {
+        color: white;
+        font-size: 15px;
+    }
+}
+
+// Bottom section of the footer containing more navigation links 
+
+.ftr-cnt-btm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+    @media screen and (min-width: $sml) {     
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    @media screen and (min-width: $scrn) {     
+        justify-content: left;
+    }
+    
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-size: 20px;
+
+        @media screen and (min-width: $sml) {     
+            font-size: 15px;
+        }
+
+        @media screen and (min-width: $mid) {     
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: $scrn) {     
+            margin-right: 20px;
+        }
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
 

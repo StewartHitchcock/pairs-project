@@ -1,17 +1,17 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $sml) {
 .media {
     width: 750px;
     margin: auto auto;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $mid) {
     .media {
         width: 970px;
         }
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: $scrn) {
     .media {
         width: 1200px;
         }

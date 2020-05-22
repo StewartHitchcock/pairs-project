@@ -528,38 +528,6 @@ a {
   text-decoration: none;
 }
 
-.ftr-cnt-top {
-  display: flex;
-  flex-direction: row;
-  width: 768px;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-size: 12px;
-}
-.ftr-cnt-top a {
-  color: white;
-}
-
-.ftr-cnt-btm {
-  display: flex;
-  flex-direction: row;
-  width: 768px;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  text-transform: uppercase;
-}
-.ftr-cnt-btm a {
-  color: white;
-  text-decoration: none;
-}
-.ftr-cnt-btm a:hover {
-  text-decoration: underline;
-}
-
 .ctn-main {
   display: flex;
   flex-direction: row;
@@ -571,7 +539,7 @@ a {
 }
 
 .ctn-sec-bckgrnd {
-  height: 450px;
+  height: 775px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/Exp-background.jpg");
   margin-bottom: 20px;
 }
@@ -580,18 +548,22 @@ a {
   display: flex;
   align-items: center;
   color: white;
+  margin: auto auto;
 }
 .ctn-sec h3 {
   font-size: 40px;
   margin-bottom: 5px;
 }
 .ctn-sec .span-exp {
-  width: 150px;
+  width: 200px;
   height: 3px;
   background-color: white;
+  margin: auto;
 }
 .ctn-sec .exp-div {
-  width: 800px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .cntct-main {
@@ -599,6 +571,13 @@ a {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .cntct-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .cntct-main .card {
   display: flex;
@@ -610,7 +589,7 @@ a {
   height: 300px;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .cntct-main .card {
     width: 450px;
   }
@@ -620,52 +599,60 @@ a {
     width: 550px;
   }
 }
-.cntct-main .services {
-  background-image: url("../imgs/srvc-background.jpg");
-}
-.cntct-main .services h4 {
+.cntct-main .card h4 {
   font-size: 40px;
   margin-top: 0px;
   margin-bottom: 3px;
 }
-.cntct-main .services .span-cntct {
+.cntct-main .card .span-cntct {
   width: 30px;
   height: 3px;
   background-color: black;
 }
-.cntct-main .services p {
+.cntct-main .card p {
   width: 200px;
   margin-bottom: 20px;
+}
+.cntct-main .services {
+  background-image: url("../imgs/srvc-background.jpg");
+}
+@media screen and (min-width: 768px) {
+  .cntct-main .services {
+    margin-right: 10px;
+  }
 }
 .cntct-main .offices {
   background-image: url("../imgs/offices-background.jpg");
 }
-.cntct-main .offices h4 {
-  font-size: 40px;
-  margin-top: 0px;
-  margin-bottom: 3px;
-}
-.cntct-main .offices .span-cntct {
-  width: 50px;
-  height: 3px;
-  background-color: black;
-}
-.cntct-main .offices p {
-  width: 200px;
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .cntct-main .offices {
+    margin-left: 10px;
+  }
 }
 
 .cntct-sec-bckgrnd {
   width: 100%;
   background-color: black;
-  height: 75px;
+  height: 175px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .cntct-sec-bckgrnd {
+    height: 90px;
+  }
 }
 
 .cntct-sec {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  width: 350px;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .cntct-sec {
+    flex-direction: row;
+  }
 }
 .cntct-sec p {
   color: white;
@@ -674,12 +661,107 @@ a {
   border: white solid 1px;
   color: white;
   margin-left: 10px;
-  padding: 10px;
+  padding: 10px 30px;
+  font-size: 30px;
+  white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .cntct-sec a {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+}
+
+.testimonial-bckgrnd {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 350px;
+}
+@media screen and (min-width: 1260px) {
+  .testimonial-bckgrnd {
+    height: 250px;
+  }
 }
 
 .testimonial {
   display: flex;
   flex-direction: row;
+  width: 350px;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .testimonial {
+    font-size: 25px;
+  }
+}
+
+.ftr-cnt-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto 20px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .ftr-cnt-top {
+    flex-wrap: nowrap;
+  }
+}
+.ftr-cnt-top a {
+  color: white;
+  font-size: 15px;
+}
+
+.ftr-cnt-btm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 350px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .ftr-cnt-btm {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .ftr-cnt-btm {
+    justify-content: left;
+  }
+}
+.ftr-cnt-btm a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .ftr-cnt-btm a {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ftr-cnt-btm a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .ftr-cnt-btm a {
+    margin-right: 20px;
+  }
+}
+.ftr-cnt-btm a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -689,9 +771,14 @@ header {
 }
 
 footer {
-  height: 100px;
+  height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
   opacity: 0.85;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    height: 100px;
+  }
 }
 
 .burger-container {
@@ -731,6 +818,52 @@ footer {
 
 .fa-phone-alt {
   font-size: 18px;
+}
+
+.fa-twitter {
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  .fa-twitter {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fa-twitter {
+    margin-left: 40px;
+  }
+}
+
+.fa-linkedin-in {
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  .fa-linkedin-in {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fa-linkedin-in {
+    margin-left: 40px;
+  }
+}
+
+.fa-facebook-f {
+  font-size: 30px;
+}
+
+.fa-quote-right {
+  margin-top: 310px;
+}
+@media screen and (min-width: 992px) {
+  .fa-quote-right {
+    margin-top: 250px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .fa-quote-right {
+    margin-top: 200px;
+  }
 }
 
 .homepage-image {
