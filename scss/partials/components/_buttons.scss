@@ -7,6 +7,11 @@
     padding: 10px 15px;
     border-radius: 3px;
     height: 63px;
+    margin-right: 20px;
+
+    @media screen and (min-width: $scrn) {
+      display: none;
+    }
   }
   
   .burger-container p {

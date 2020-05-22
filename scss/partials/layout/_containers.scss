@@ -4,22 +4,34 @@
     display: flex;
     flex-direction: row;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: white;
     text-transform: uppercase;
     height: 150px;
 
     .layout {
-        display:flex;
+        display:none;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: -20px;
+
+        @media screen and (min-width: $scrn) {
+            display: flex;
+          }
     }
 
     h1{
-        font-size: 30px;
+        font-size: 22px;
         margin-left: 20px;
         width: 200px;
+        justify-content: center;
+        white-space: nowrap;
+        text-align: center;
+
+        @media screen and (min-width: $sml) {
+           font-size: 40px; 
+        }
     }
     
     a {
@@ -29,6 +41,7 @@
         margin-right: 18px;
         margin-bottom: 10px;
         margin-left: 5px;
+        font-size: 20px;
     }
 
     a:hover {
@@ -41,7 +54,12 @@
 .background-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../imgs/notes.jpg");
     background-size: 100% 100%;
-    height: 700px;
+    height: 500px;
+
+    @media screen and (min-width: $sml) {
+        height: 700px; 
+    }
+
     }
 
 .title-cnt {
@@ -54,14 +72,35 @@
     text-transform: uppercase;
 
     h1 {
-        border-bottom: white 3px solid;
-        font-size: 80px;
-        padding-bottom: 20px;
+        
+        white-space: nowrap;
+        font-size: 30px;
+        padding-bottom: 10px;
+        margin: 50px auto 0px;
+
+        @media screen and (min-width: $sml) {
+            font-size: 60px; 
+        }
     }
 
     h2 {
+        border-bottom: white 3px solid;
         padding-bottom: 10px;
-        font-size: 55px;
+        font-size: 25px;
+        
+
+        @media screen and (min-width: $sml) {
+            font-size: 40px; 
+        }
+    }
+
+    h5 {
+        font-size: 20px;
+
+        @media screen and (min-width: $sml) {
+            font-size: 30px; 
+            margin-top: 20px;
+        }
     }
 
     a {
@@ -69,6 +108,10 @@
         padding: 10px 15px;
         color: white;
         text-decoration: none;
+
+        @media screen and (min-width: $sml) {
+            font-size: 40px; 
+        }
     }
 }
 
@@ -76,12 +119,33 @@
 
 .ctn-main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    @media screen and (min-width: $sml) {
+        flex-direction: row;
+      }
 
     .philo-div {
         display: flex;
         flex-direction: column;
-        width: 500px;
+        width: 450px;
+        margin: auto;
+
+    .span-phil {
+        width: 200px;
+        height: 3px;
+        background-color: black;
+    }
+
+    h3 {
+        font-size: 40px;   
+        margin-bottom: 5px;
+       }
+
+    @media screen and (min-width: $sml) {
+        width: 450px;
+        margin-left: 10px;
+        }
     }
 }
 
@@ -91,13 +155,19 @@
     height: 775px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../imgs/Exp-background.jpg");
     margin-bottom: 20px;
+
+    @media screen and (min-width: $sml) {
+        height: 600px;
+        }
 }
 
 .ctn-sec {
     display: flex;
     align-items: center;
     color: white;
-    margin: auto auto;
+    margin: auto;
+    width: 450px;
+    
 
     h3 {
         font-size: 40px;
@@ -108,13 +178,19 @@
         width: 200px;
         height: 3px;
         background-color: white;
-        margin: auto;
+        
     }
 
     .exp-div{
         width: 300px;
         justify-content: center;
         align-items: center;
+        margin: auto;
+
+        @media screen and (min-width: $sml) {
+            width: 450px;
+            margin-left: 10px;
+          }
     }
 
   
@@ -159,14 +235,22 @@
         }
 
         .span-cntct {
-            width: 30px;
+            width: 150px;
             height: 3px;
             background-color: black;
+            margin-top: 2px;
         }
 
         p{
             width: 200px;
             margin-bottom: 20px;
+        }
+
+        a {
+            border: solid black 3px;
+            background-color: white;
+            padding: 10px;
+            font-size: 20px;
         }
     }
 

@@ -469,21 +469,35 @@ a {
   display: flex;
   flex-direction: row;
   margin: auto;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: white;
   text-transform: uppercase;
   height: 150px;
 }
 .hdr-cnt .layout {
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: -20px;
+}
+@media screen and (min-width: 1260px) {
+  .hdr-cnt .layout {
+    display: flex;
+  }
 }
 .hdr-cnt h1 {
-  font-size: 30px;
+  font-size: 22px;
   margin-left: 20px;
   width: 200px;
+  justify-content: center;
+  white-space: nowrap;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hdr-cnt h1 {
+    font-size: 40px;
+  }
 }
 .hdr-cnt a {
   color: white;
@@ -492,6 +506,7 @@ a {
   margin-right: 18px;
   margin-bottom: 10px;
   margin-left: 5px;
+  font-size: 20px;
 }
 .hdr-cnt a:hover {
   text-decoration: underline;
@@ -500,7 +515,12 @@ a {
 .background-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/notes.jpg");
   background-size: 100% 100%;
-  height: 700px;
+  height: 500px;
+}
+@media screen and (min-width: 768px) {
+  .background-img {
+    height: 700px;
+  }
 }
 
 .title-cnt {
@@ -513,13 +533,34 @@ a {
   text-transform: uppercase;
 }
 .title-cnt h1 {
-  border-bottom: white 3px solid;
-  font-size: 80px;
-  padding-bottom: 20px;
+  white-space: nowrap;
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin: 50px auto 0px;
+}
+@media screen and (min-width: 768px) {
+  .title-cnt h1 {
+    font-size: 60px;
+  }
 }
 .title-cnt h2 {
+  border-bottom: white 3px solid;
   padding-bottom: 10px;
-  font-size: 55px;
+  font-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .title-cnt h2 {
+    font-size: 40px;
+  }
+}
+.title-cnt h5 {
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .title-cnt h5 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
 }
 .title-cnt a {
   border: white 1px solid;
@@ -527,15 +568,41 @@ a {
   color: white;
   text-decoration: none;
 }
+@media screen and (min-width: 768px) {
+  .title-cnt a {
+    font-size: 40px;
+  }
+}
 
 .ctn-main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .ctn-main {
+    flex-direction: row;
+  }
 }
 .ctn-main .philo-div {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 450px;
+  margin: auto;
+}
+.ctn-main .philo-div .span-phil {
+  width: 200px;
+  height: 3px;
+  background-color: black;
+}
+.ctn-main .philo-div h3 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .ctn-main .philo-div {
+    width: 450px;
+    margin-left: 10px;
+  }
 }
 
 .ctn-sec-bckgrnd {
@@ -543,12 +610,18 @@ a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/Exp-background.jpg");
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .ctn-sec-bckgrnd {
+    height: 600px;
+  }
+}
 
 .ctn-sec {
   display: flex;
   align-items: center;
   color: white;
-  margin: auto auto;
+  margin: auto;
+  width: 450px;
 }
 .ctn-sec h3 {
   font-size: 40px;
@@ -558,12 +631,18 @@ a {
   width: 200px;
   height: 3px;
   background-color: white;
-  margin: auto;
 }
 .ctn-sec .exp-div {
   width: 300px;
   justify-content: center;
   align-items: center;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .ctn-sec .exp-div {
+    width: 450px;
+    margin-left: 10px;
+  }
 }
 
 .cntct-main {
@@ -605,13 +684,20 @@ a {
   margin-bottom: 3px;
 }
 .cntct-main .card .span-cntct {
-  width: 30px;
+  width: 150px;
   height: 3px;
   background-color: black;
+  margin-top: 2px;
 }
 .cntct-main .card p {
   width: 200px;
   margin-bottom: 20px;
+}
+.cntct-main .card a {
+  border: solid black 3px;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
 }
 .cntct-main .services {
   background-image: url("../imgs/srvc-background.jpg");
@@ -790,6 +876,12 @@ footer {
   padding: 10px 15px;
   border-radius: 3px;
   height: 63px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1260px) {
+  .burger-container {
+    display: none;
+  }
 }
 
 .burger-container p {
@@ -867,10 +959,11 @@ footer {
 }
 
 .homepage-image {
-  background: url("../../../imgs/thedoc.jpg") no-repeat;
+  background: url("../imgs/thedoc.jpg") no-repeat;
   background-size: 100% 100%;
   width: 500px;
   height: 500px;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
