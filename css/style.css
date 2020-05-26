@@ -473,7 +473,7 @@ a {
   align-items: center;
   color: white;
   text-transform: uppercase;
-  height: 150px;
+  height: 75px;
 }
 .hdr-cnt .layout {
   display: none;
@@ -694,13 +694,17 @@ a {
   margin-bottom: 20px;
 }
 .cntct-main .card a {
-  border: solid black 3px;
+  border: solid black 1px;
   background-color: white;
   padding: 10px;
   font-size: 20px;
+  font-weight: 800;
+  width: 250px;
+  text-align: center;
 }
 .cntct-main .services {
   background-image: url("../imgs/srvc-background.jpg");
+  background-size: contain;
 }
 @media screen and (min-width: 768px) {
   .cntct-main .services {
@@ -709,6 +713,7 @@ a {
 }
 .cntct-main .offices {
   background-image: url("../imgs/offices-background.jpg");
+  background-size: contain;
 }
 @media screen and (min-width: 768px) {
   .cntct-main .offices {
@@ -718,13 +723,19 @@ a {
 
 .cntct-sec-bckgrnd {
   width: 100%;
-  background-color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+  opacity: 0.85;
   height: 175px;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .cntct-sec-bckgrnd {
     height: 90px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cntct-sec-bckgrnd {
+    height: 75px;
   }
 }
 
@@ -763,6 +774,11 @@ a {
   width: 100%;
   background-color: #FFFFFF;
   height: 350px;
+}
+@media screen and (min-width: 992px) {
+  .testimonial-bckgrnd {
+    height: 300px;
+  }
 }
 @media screen and (min-width: 1260px) {
   .testimonial-bckgrnd {
@@ -850,8 +866,115 @@ a {
   text-decoration: underline;
 }
 
+.cntct-frm-bckgrnd {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+  opacity: 0.85;
+  margin: 10px 0px;
+  height: 486px;
+}
+@media screen and (min-width: 768px) {
+  .cntct-frm-bckgrnd {
+    height: 725px;
+  }
+}
+
+.cntct-frm {
+  margin: auto;
+  width: 300px;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .cntct-frm {
+    width: 700px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cntct-frm {
+    width: 920px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .cntct-frm {
+    width: 1150px;
+  }
+}
+.cntct-frm .frm-lft {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.cntct-frm .frm-mid {
+  display: none;
+  text-align: center;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1260px) {
+  .cntct-frm .frm-mid {
+    display: block;
+  }
+}
+.cntct-frm .frm-mid h2 {
+  color: white;
+}
+.cntct-frm .frm-mid p {
+  color: white;
+}
+.cntct-frm .frm-rght {
+  margin-top: 10px;
+  width: 400px;
+}
+.cntct-frm label {
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+}
+.cntct-frm button {
+  color: white;
+  padding: 0px;
+}
+.cntct-frm textarea {
+  resize: none;
+  color: white;
+  border: white solid 1px;
+  border-radius: 5px;
+  width: 300px;
+}
+.cntct-frm input {
+  margin-top: 10px;
+  color: white;
+  border: white solid 1px;
+  border-radius: 5px;
+  height: 30px;
+  width: 300px;
+}
+.cntct-frm #check {
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+}
+.cntct-frm .submit {
+  border: white solid 3px;
+  padding: 0px 30px;
+}
+.cntct-frm .homepage-image {
+  float: right;
+  display: none;
+  width: 400px;
+  height: 500px;
+}
+@media screen and (min-width: 768px) {
+  .cntct-frm .homepage-image {
+    display: inline;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cntct-frm .homepage-image {
+    margin-left: 215px;
+  }
+}
+
 header {
-  height: 150px;
+  height: 75px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
   opacity: 0.85;
 }

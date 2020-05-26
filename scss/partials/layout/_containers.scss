@@ -8,7 +8,7 @@
     align-items: center;
     color: white;
     text-transform: uppercase;
-    height: 150px;
+    height: 75px;
 
     .layout {
         display:none;
@@ -219,6 +219,7 @@
         width: 350px;
         height: 300px;
         margin-bottom: 40px;
+        
 
         @media screen and (min-width: $sml) {     
             width: 450px;
@@ -247,23 +248,30 @@
         }
 
         a {
-            border: solid black 3px;
+            border: solid black 1px;
             background-color: white;
             padding: 10px;
             font-size: 20px;
+            font-weight: 800;
+            width: 250px;
+            text-align: center;           
         }
     }
 
     .services {
         background-image: url("../imgs/srvc-background.jpg");
-        
+        background-size: contain;
+        // opacity: 0.3;
+
         @media screen and (min-width: $sml) {     
-            margin-right: 10px;
+            margin-right: 10px; 
         }
     }
 
     .offices {
         background-image: url("../imgs/offices-background.jpg");
+        background-size: contain;
+        // opacity: 0.3;
 
         @media screen and (min-width: $sml) {     
             margin-left: 10px;
@@ -275,12 +283,17 @@
 
 .cntct-sec-bckgrnd {
     width: 100%;
-    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+    opacity: 0.85;
     height: 175px;
     margin-bottom: 10px; 
 
     @media screen and (min-width: $sml) {     
         height: 90px;
+    }
+
+    @media screen and (min-width: $mid) {     
+        height: 75px;
     }
     
 }
@@ -324,6 +337,10 @@
     width: 100%;
     background-color: $white;
     height: 350px;
+
+    @media screen and (min-width: $mid) {     
+        height: 300px;
+    }
 
     @media screen and (min-width: $scrn) {     
         height: 250px;
@@ -409,3 +426,121 @@
     }
 }
 
+
+
+
+// Contact form page
+
+.cntct-frm-bckgrnd {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+    opacity: 0.85;
+    margin: 10px 0px;
+    height: 486px;
+
+    @media screen and (min-width: $sml) {     
+        height: 725px;
+    }
+}
+
+.cntct-frm {
+    margin: auto;
+    width: 300px;
+    display: flex;
+
+    @media screen and (min-width: $sml) {     
+        width: 700px;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: $mid) {     
+        width: 920px;  
+    }
+
+    @media screen and (min-width: $scrn) {     
+        width: 1150px;
+    }
+
+
+    .frm-lft {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .frm-mid {
+        display: none;
+        text-align: center;
+        margin-right: 20px;
+    
+
+        @media screen and (min-width: $scrn) {     
+            display: block;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    .frm-rght {
+        margin-top: 10px;
+        width: 400px;
+    }
+
+    label {
+        color: white;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    button {
+        color: white;
+        padding: 0px;
+    }
+
+    textarea {
+        resize: none;
+        color: white;
+        border: white solid 1px;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    input {
+        margin-top: 10px;
+        color: white;
+        border: white solid 1px;
+        border-radius: 5px;
+        height: 30px;
+        width: 300px;
+    }
+
+    #check {
+        width: 15px;
+        height: 15px; 
+        margin: 0px;
+        
+    }
+
+    .submit {
+        border: white solid 3px;
+        padding: 0px 30px;
+    }
+
+    .homepage-image {
+        float: right;
+        display: none;
+        width: 400px;
+        height: 500px;
+        @media screen and (min-width: $sml) {     
+             display: inline;
+        }
+
+        @media screen and (min-width: $mid) {     
+            margin-left: 215px;
+       }
+    }
+}
