@@ -1,5 +1,11 @@
 footer {
-    height: 100px;
+    height: 350px;
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) black;
     opacity: 0.85;
+
+    @media screen and (min-width: $sml) {     
+        height: 100px;
+    }
+
+    
 }

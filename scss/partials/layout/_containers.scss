@@ -3,46 +3,103 @@
 .hdr-cnt {
     display: flex;
     flex-direction: row;
-    width: 768px;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     color: white;
     text-transform: uppercase;
-    font-size: 14px;
-    
+    height: 75px;
 
+    .layout {
+        display:none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: -20px;
+
+        @media screen and (min-width: $scrn) {
+            display: flex;
+          }
+    }
+
+    h1{
+        font-size: 22px;
+        margin-left: 20px;
+        width: 200px;
+        justify-content: center;
+        white-space: nowrap;
+        text-align: center;
+
+        @media screen and (min-width: $sml) {
+           font-size: 40px; 
+        }
+    }
+    
     a {
         color: white;
         text-decoration: none;
+        font-size: 15px; 
+        margin-right: 18px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        font-size: 20px;
     }
 
-    a:hover {
+    a[class*="nav-link"]:hover {
         text-decoration: underline;
     }
 }
 
-//  Banner
+//  Banner/showcase
 
 .background-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../imgs/notes.jpg");
     background-size: 100% 100%;
-    height: 700px;
+    height: 500px;
+
+    @media screen and (min-width: $sml) {
+        height: 850px; 
     }
+
+}
 
 .title-cnt {
     display: flex;
     flex-direction: column;
-    width: 768px;
     margin: auto;
     justify-content: center;
     align-items: center;
     color: white;
     text-transform: uppercase;
 
-    h2 {
+    h1 {
+        white-space: nowrap;
+        font-size: 30px;
         padding-bottom: 10px;
+        margin: 50px auto 0px;
+
+        @media screen and (min-width: $sml) {
+            font-size: 60px; 
+        }
+    }
+
+    h2 {
         border-bottom: white 3px solid;
+        padding-bottom: 10px;
+        font-size: 25px;
+        
+
+        @media screen and (min-width: $sml) {
+            font-size: 40px; 
+        }
+    }
+
+    h5 {
+        font-size: 20px;
+
+        @media screen and (min-width: $sml) {
+            font-size: 30px; 
+            margin-top: 20px;
+        }
     }
 
     a {
@@ -50,21 +107,275 @@
         padding: 10px 15px;
         color: white;
         text-decoration: none;
+
+        @media screen and (min-width: $sml) {
+            font-size: 40px; 
+        }
     }
 }
+
+// Philosophy container 
+
+.ctn-main {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $sml) {
+        flex-direction: row;
+      }
+
+    .philo-div {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        margin: auto;
+
+    .span-phil {
+        width: 200px;
+        height: 3px;
+        background-color: black;
+    }
+
+    h3 {
+        font-size: 40px;   
+        margin-bottom: 5px;
+       }
+
+    @media screen and (min-width: $sml) {
+        width: 450px;
+        margin-left: 10px;
+        }
+    }
+}
+
+// Experience container
+
+.ctn-sec-bckgrnd {
+    height: 775px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../imgs/Exp-background.jpg");
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $sml) {
+        height: 600px;
+        }
+}
+
+.ctn-sec {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: auto;
+    width: 450px;
+    
+
+    h3 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .span-exp {
+        width: 200px;
+        height: 3px;
+        background-color: white;
+        
+    }
+
+    .exp-div{
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        @media screen and (min-width: $sml) {
+            width: 450px;
+            margin-left: 10px;
+          }
+    }
+
+  
+}
+
+// Contact primary
+
+.cntct-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $sml) {     
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px black;
+        width: 350px;
+        height: 300px;
+        margin-bottom: 40px;
+        
+
+        @media screen and (min-width: $sml) {     
+            width: 450px;
+        }
+
+        @media screen and (min-width: $scrn) {
+            width: 550px;
+        }
+
+        h4 {
+            font-size: 40px;
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+
+        .span-cntct {
+            width: 150px;
+            height: 3px;
+            background-color: black;
+            margin-top: 2px;
+        }
+
+        p{
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            border: solid black 1px;
+            background-color: white;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 800;
+            width: 250px;
+            text-align: center;           
+        }
+    }
+
+    .services {
+        background-image: url("../imgs/srvc-background.jpg");
+        background-size: contain;
+        // opacity: 0.3;
+
+        @media screen and (min-width: $sml) {     
+            margin-right: 10px; 
+        }
+    }
+
+    .offices {
+        background-image: url("../imgs/offices-background.jpg");
+        background-size: contain;
+        // opacity: 0.3;
+
+        @media screen and (min-width: $sml) {     
+            margin-left: 10px;
+        }
+    }
+}
+
+// Contact secondary
+
+.cntct-sec-bckgrnd {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+    opacity: 0.85;
+    height: 175px;
+    margin-bottom: 10px; 
+
+    @media screen and (min-width: $sml) {     
+        height: 90px;
+    }
+
+    @media screen and (min-width: $mid) {     
+        height: 75px;
+    }
+    
+}
+
+.cntct-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: auto;
+
+    @media screen and (min-width: $sml) {     
+        flex-direction: row;
+    }
+   
+    p {
+        color: white;
+    }
+
+    a {
+        border: white solid 1px; 
+        color: white;
+        margin-left: 10px;
+        padding: 10px 30px;
+        font-size: 30px;
+        white-space: nowrap;
+        
+    
+        @media screen and (min-width: $sml) {     
+            padding: 10px 40px;
+            font-size: 20px;
+            margin-left: 50px;
+        }
+    }
+}
+
+//testimonial section
+
+
+.testimonial-bckgrnd {
+    width: 100%;
+    background-color: $white;
+    height: 350px;
+
+    @media screen and (min-width: $mid) {     
+        height: 300px;
+    }
+
+    @media screen and (min-width: $scrn) {     
+        height: 250px;
+    }
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    margin: auto;
+
+    @media screen and (min-width: $sml) {     
+        font-size: 25px;
+    }
+}
+
 // Top section of the footer containing the social media and copyright info
 .ftr-cnt-top {
     display: flex;
     flex-direction: row;
-    width: 768px;
-    margin: auto;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto 20px;
     justify-content: space-between;
     align-items: center;
     color: white;
     font-size: 12px;
 
+    @media screen and (min-width: $sml) {     
+        flex-wrap: nowrap;
+    }
+
     a {
         color: white;
+        font-size: 15px;
     }
 }
 
@@ -72,18 +383,41 @@
 
 .ftr-cnt-btm {
     display: flex;
-    flex-direction: row;
-    width: 768px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
     margin: auto;
     justify-content: space-between;
     align-items: center;
     color: white;
     text-transform: uppercase;
     
+    @media screen and (min-width: $sml) {     
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    @media screen and (min-width: $scrn) {     
+        justify-content: left;
+    }
+    
 
     a {
         color: white;
         text-decoration: none;
+        margin-bottom: 10px;
+        font-size: 20px;
+
+        @media screen and (min-width: $sml) {     
+            font-size: 15px;
+        }
+
+        @media screen and (min-width: $mid) {     
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: $scrn) {     
+            margin-right: 20px;
+        }
     }
 
     a:hover {
@@ -92,3 +426,142 @@
 }
 
 
+
+
+// Contact form page // This needs to be added to it's own partial.
+
+.cntct-frm-bckgrnd {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+    opacity: 0.85;
+    margin: 10px 0px;
+    height: 486px;
+
+    @media screen and (min-width: $sml) {     
+        height: 725px;
+    }
+}
+
+.cntct-frm {
+    margin: auto;
+    width: 300px;
+    display: flex;
+
+    @media screen and (min-width: $sml) {     
+        width: 700px;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: $mid) {     
+        width: 920px;  
+    }
+
+    @media screen and (min-width: $scrn) {     
+        width: 1150px;
+    }
+
+
+    .frm-lft {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .frm-mid {
+        display: none;
+        text-align: center;
+        margin-right: 20px;
+    
+
+        @media screen and (min-width: $scrn) {     
+            display: block;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    .frm-rght {
+        margin-top: 10px;
+        width: 400px;
+
+        @media screen and (min-width: $mid) {     
+            margin-left: 215px;
+       }
+
+       @media screen and (min-width: $scrn) {     
+        margin-left: 0px;
+   }
+    }
+
+    label {
+        color: white;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    button {
+        color: white;
+        padding: 0px;
+    }
+
+    textarea {
+        resize: none;
+        color: white;
+        border: white solid 1px;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    input {
+        margin-top: 10px;
+        color: white;
+        border: white solid 1px;
+        border-radius: 5px;
+        height: 30px;
+        width: 300px;
+    }
+
+    #check {
+        width: 15px;
+        height: 15px; 
+        margin: 0px;
+        
+    }
+
+    .submit {
+        border: white solid 3px;
+        padding: 0px 30px;
+    }
+
+    .homepage-image {
+        float: right;
+        display: none;
+        width: 400px;
+        height: 500px;
+
+        @media screen and (min-width: $sml) {     
+             display: inline;
+        }
+    }
+}
+
+// Offices page // This needs to be added to it's own partial.
+
+.office-cnt {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+    opacity: 0.85;
+    height: 512px;
+
+    @media screen and (min-width: $sml) {     
+        height: 762px;
+   }
+
+   h2 {
+       color: white;
+   }
+}

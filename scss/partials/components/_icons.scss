@@ -1,0 +1,48 @@
+.fa-envelope {
+    font-size: 18px;
+}
+
+.fa-phone-alt {
+    font-size: 18px;
+}
+
+.fa-twitter {
+    font-size: 30px;
+
+    @media screen and (min-width: $sml) {     
+        margin-left: 20px;
+    }
+
+    @media screen and (min-width: $mid) {     
+        margin-left: 40px;
+    }
+}
+
+.fa-linkedin-in {
+    font-size: 30px;
+
+    @media screen and (min-width: $sml) {     
+        margin-left: 20px;
+    }
+
+    @media screen and (min-width: $mid) {     
+        margin-left: 40px;
+    }
+
+}
+
+.fa-facebook-f{
+    font-size: 30px;
+}
+
+.fa-quote-right {
+    margin-top: 310px;
+
+    @media screen and (min-width: $mid) {     
+        margin-top: 250px;
+    }
+
+    @media screen and (min-width: $scrn) {     
+        margin-top: 200px;
+    }
+}
