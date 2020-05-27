@@ -44,7 +44,7 @@
         font-size: 20px;
     }
 
-    a:hover {
+    a[class*="nav-link"]:hover {
         text-decoration: underline;
     }
 }
