@@ -3,7 +3,7 @@
         <h1>Dr Gilbert Andrews</h1>
         <div class = "layout">
             <a href="">My Services</a>
-            <a href="">My Offices</a> 
+            <a href="all-pages/offices.php">My Offices</a> 
             <a href="">Testimonials</a>
             <a href="all-pages/contact.php">Contact</a>
             <a href=""><i class="fas fa-phone-alt"></i></a>

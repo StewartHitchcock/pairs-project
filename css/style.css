@@ -519,7 +519,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .background-img {
-    height: 700px;
+    height: 850px;
   }
 }
 
@@ -923,6 +923,16 @@ a {
   margin-top: 10px;
   width: 400px;
 }
+@media screen and (min-width: 992px) {
+  .cntct-frm .frm-rght {
+    margin-left: 215px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .cntct-frm .frm-rght {
+    margin-left: 0px;
+  }
+}
 .cntct-frm label {
   color: white;
   margin-top: 10px;
@@ -967,10 +977,20 @@ a {
     display: inline;
   }
 }
-@media screen and (min-width: 992px) {
-  .cntct-frm .homepage-image {
-    margin-left: 215px;
+
+.office-cnt {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+  opacity: 0.85;
+  height: 512px;
+}
+@media screen and (min-width: 768px) {
+  .office-cnt {
+    height: 762px;
   }
+}
+.office-cnt h2 {
+  color: white;
 }
 
 header {

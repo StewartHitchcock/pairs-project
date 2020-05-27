@@ -57,10 +57,10 @@
     height: 500px;
 
     @media screen and (min-width: $sml) {
-        height: 700px; 
+        height: 850px; 
     }
 
-    }
+}
 
 .title-cnt {
     display: flex;
@@ -72,7 +72,6 @@
     text-transform: uppercase;
 
     h1 {
-        
         white-space: nowrap;
         font-size: 30px;
         padding-bottom: 10px;
@@ -429,7 +428,7 @@
 
 
 
-// Contact form page
+// Contact form page // This needs to be added to it's own partial.
 
 .cntct-frm-bckgrnd {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
@@ -488,6 +487,14 @@
     .frm-rght {
         margin-top: 10px;
         width: 400px;
+
+        @media screen and (min-width: $mid) {     
+            margin-left: 215px;
+       }
+
+       @media screen and (min-width: $scrn) {     
+        margin-left: 0px;
+   }
     }
 
     label {
@@ -535,12 +542,26 @@
         display: none;
         width: 400px;
         height: 500px;
+
         @media screen and (min-width: $sml) {     
              display: inline;
         }
-
-        @media screen and (min-width: $mid) {     
-            margin-left: 215px;
-       }
     }
+}
+
+// Offices page // This needs to be added to it's own partial.
+
+.office-cnt {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
+    opacity: 0.85;
+    height: 512px;
+
+    @media screen and (min-width: $sml) {     
+        height: 762px;
+   }
+
+   h2 {
+       color: white;
+   }
 }
