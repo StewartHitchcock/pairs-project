@@ -1,0 +1,12 @@
+.terms-privacy-content{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    @media screen and (min-width: 800px){
+        width: 85%;
+    }
+    @media screen and (min-width: 1200px){
+        width: 70%;
+    }
+}
