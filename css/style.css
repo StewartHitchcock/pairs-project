@@ -597,9 +597,6 @@ hr.styled-small {
     @media screen and (min-width: 768px) {
       .cntct-main .card {
         width: 450px; } }
-    @media screen and (min-width: 1260px) {
-      .cntct-main .card {
-        width: 550px; } }
     .cntct-main .card h4 {
       font-size: 40px;
       margin-top: 0px;
@@ -969,6 +966,37 @@ footer {
   width: 500px;
   height: 500px;
   margin: auto; }
+
+.errormsg {
+  color: red; }
+
+.succmsg {
+  color: #00d300; }
+
+.pushy-open-right .pushy {
+  width: 400px; }
+
+.pushy {
+  background: #333645; }
+  .pushy .tabs {
+    display: block;
+    text-align: center;
+    text-transform: uppercase; }
+    .pushy .tabs .container {
+      padding: 30px; }
+      .pushy .tabs .container a {
+        color: white; }
+      .pushy .tabs .container .btn {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        outline: 1px solid rgba(0, 0, 0, 0.25);
+        font-size: 1.125rem;
+        padding: 22px 0;
+        margin-top: 20px; }
+        .pushy .tabs .container .btn:first-child {
+          margin-top: 0; }
+        .pushy .tabs .container .btn:hover {
+          background: #38383d; }
 
 @media screen and (min-width: 768px) {
   .media {
