@@ -478,10 +478,7 @@ hr.styled-small {
 .background-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/notes.jpg");
   background-size: 100% 100%;
-  height: 500px; }
-  @media screen and (min-width: 768px) {
-    .background-img {
-      height: 850px; } }
+  height: calc(100vh - 75px); }
 
 .title-cnt {
   display: flex;
@@ -490,7 +487,9 @@ hr.styled-small {
   justify-content: center;
   align-items: center;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  height: 100%;
+  padding-bottom: 10rem; }
   .title-cnt h1 {
     white-space: nowrap;
     font-size: 30px;
@@ -741,16 +740,14 @@ hr.styled-small {
 .cntct-frm-bckgrnd {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
   opacity: 0.85;
-  margin: 10px 0px;
-  height: 486px; }
-  @media screen and (min-width: 768px) {
-    .cntct-frm-bckgrnd {
-      height: 725px; } }
+  height: calc(100vh - 175px); }
 
 .cntct-frm {
   margin: auto;
   width: 300px;
-  display: flex; }
+  display: flex;
+  height: 100%;
+  align-items: center; }
   @media screen and (min-width: 768px) {
     .cntct-frm {
       width: 700px;
