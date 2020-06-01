@@ -6,10 +6,8 @@
             <a class="nav-link" href="/pages/offices-page/offices.php">My Offices</a> 
             <a class="nav-link" href="">Testimonials</a>
             <a class="nav-link" href="/pages/contact-page/contact.php">Contact</a>
-            <a class="nav-link" href=""><i class="fas fa-phone-alt"></i></a>
-            <a class="nav-link" href=""><i class="far fa-envelope"></i></a>
         </div>
-        <div class="burger-container">
+        <div class="burger-container menu-btn">
             <div>
                 <div class="burger-top"></div>
                 <div class="burger-mid"></div>

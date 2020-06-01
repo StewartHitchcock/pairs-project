@@ -1,0 +1,35 @@
+.pushy-open-right{
+    .pushy{
+        width: 400px;
+    }
+}
+
+.pushy{ 
+    background: #333645;
+    .tabs{
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+
+        .container{
+            padding: 30px;
+            a{
+                color: white;
+            }
+            .btn{
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 3px;
+                outline: 1px solid rgba(0,0,0,0.25);
+                font-size: 1.125rem;
+                padding: 22px 0;
+                margin-top: 20px;
+                &:first-child{
+                    margin-top: 0;
+                }
+                &:hover{
+                    background: #38383d;
+                }
+            }
+        }
+    }
+}
