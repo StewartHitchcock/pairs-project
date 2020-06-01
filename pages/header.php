@@ -4,7 +4,7 @@
         <div class = "layout">
             <a class="nav-link" href="/pages/services-page/services.php">My Services</a>
             <a class="nav-link" href="/pages/offices-page/offices.php">My Offices</a> 
-            <a class="nav-link" href="">Testimonials</a>
+            <a class="nav-link" href="/index.php#testimonials">Testimonials</a>
             <a class="nav-link" href="/pages/contact-page/contact.php">Contact</a>
         </div>
         <div class="burger-container menu-btn">
