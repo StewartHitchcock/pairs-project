@@ -551,17 +551,50 @@
 
 // Offices page // This needs to be added to it's own partial.
 
-.office-cnt {
+.office-bckgrnd {
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) black;
     opacity: 0.85;
-    height: 512px;
+    height: 850px;
 
     @media screen and (min-width: $sml) {     
         height: 762px;
-   }
+    }
+}
 
-   h2 {
-       color: white;
-   }
+.office-cnt {
+    width: 300px;
+    margin: auto;
+
+    @media screen and (min-width: $sml) {     
+        width: 762px;
+    }
+
+    h2 {
+        color: white;
+        margin: 0px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .office-spn {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 1px;
+        background-color: white;
+        margin: 5px auto 10px;
+    }
+
+    h3 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
 }
