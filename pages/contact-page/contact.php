@@ -13,19 +13,41 @@
     <div class = "cntct-frm-bckgrnd">   
         <div class = "cntct-frm">
             <div class = "frm-lft">
-                <form action="action.php" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="telephone">Telephone Number:</label><br>
-                <input type="text" id="telephone" name="telephone"><br>
-                <label for="message">Message:</label><br>
-                <textarea name="message" rows="7" cols="30"></textarea><br>
-                <label for="gdpr">GDPR Tickbox:</label>
-                <input type="checkbox" id="check" name="gdpr"><br>
-                <!-- Recaptcha? -->
-                <input class="submit" type="submit" value="Submit">
+                <form action="contact-process.php" method="POST">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="text" id="phone" name="phone" placeholder="07123456789">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+                <?php 
+                    $fullUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                    if (strpos($fullUrl, "valid=firstError") == true){
+                        echo "<h3 class='errormsg'>Invalid First Name. Only letter and white spaces are allowed!</h3>";
+                    }
+                    else if (strpos($fullUrl, "valid=lastError") == true){
+                        echo "<h3 class='errormsg'>Invalid Last Name. Only letter and white spaces are allowed!</h3>";
+                    }
+                    else if (strpos($fullUrl, "valid=phoneError") == true){
+                        echo "<h3 class='errormsg'>Invalid Phone Number. Please try again.</h3>";
+                    }
+                    else if (strpos($fullUrl, "valid=messageError") == true){
+                        echo "<h3 class='errormsg'>Invalid Message. Only alpha-numeric characters are allowed!</h3>";
+                    }
+                    else if (strpos($fullUrl, "valid=success") == true){
+                        echo "<h3 class='succmsg'>Submission Successful!</h3>";
+                    }
+                ?>
             </div>
             <div class = "frm-mid">
                 <h2>My Philosophy</h2>
@@ -35,12 +57,11 @@
                 <div class="homepage-image"></div>
             </div>
         </div>
-
     </div>
-    </form>
+    <footer>
+        <?php include "$root/pages/footer.php"; ?>
+    </footer>
+    <?php include "$root/pages/scripts.php"?>
 </body>
-<footer>
-    <?php include "$root/pages/footer.php"; ?>
-</footer>
 </html>
 
