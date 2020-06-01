@@ -252,24 +252,51 @@
     }
 
     .services {
-        background-image: url("../imgs/srvc-background.jpg");
-        background-size: contain;
-        // opacity: 0.3;
-
+        position: relative;
+        z-index: 1;
         @media screen and (min-width: $sml) {     
             margin-right: 10px; 
         }
     }
 
     .offices {
-        background-image: url("../imgs/offices-background.jpg");
-        background-size: contain;
-        // opacity: 0.3;
-
+        position: relative;
+        z-index: 1;
+        
         @media screen and (min-width: $sml) {     
             margin-left: 10px;
         }
     }
+}
+
+
+.bg-srv {
+    background-image: url("../imgs/srvc-background.jpg");
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.bg-off {
+    background-image: url("../imgs/offices-background.jpg");
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
 }
 
 // Contact secondary
